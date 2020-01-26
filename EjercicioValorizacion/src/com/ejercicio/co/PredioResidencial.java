@@ -10,7 +10,6 @@ public class PredioResidencial extends Predio{
 	
 	public PredioResidencial() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 
@@ -18,17 +17,11 @@ public class PredioResidencial extends Predio{
 	public PredioResidencial(String registro, String direccion, long montoAvaluo, float dimension) {
 		super(registro, direccion, montoAvaluo);
 		this.dimension = dimension;
-		// TODO Auto-generated constructor stub
 	}
-
-
-	
 
 	public float getDimension() {
 		return dimension;
 	}
-
-
 
 	public void setDimension(float dimension) {
 		this.dimension = dimension;
@@ -40,7 +33,6 @@ public class PredioResidencial extends Predio{
 	public long calcularValorizacion() {
 		// TODO Auto-generated method stub
 		long valor = 0;
-		
 		
 		if(dimension < LIMITE_DIMENSION) {
 			valor = (long) (this.montoAvaluo + this.montoAvaluo*MONTO_AVALUO_MAYOR);

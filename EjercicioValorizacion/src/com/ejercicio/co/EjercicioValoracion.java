@@ -23,7 +23,7 @@ public class EjercicioValoracion {
 				// Residencial
 				break;
 			case 2: 
-				// Comercial
+				// Comercial con constructors vacio
 				predio = new PredioComercial();
 				registro = JOptionPane.showInputDialog(null, "Digite el valor del registro del predio");
 				direccion = JOptionPane.showInputDialog(null, "Digite la direccion del predio con registro "+registro);

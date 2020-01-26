@@ -4,9 +4,10 @@ public class PredioComercial extends Predio {
 	private static final long LIMITE = 20000000;
 	private static final float PORCENTAJE_VALORIZACION_MENOR = 10.3f/100f;
 	private static final float PORCENTAJE_VALORIZACION_MAYOR = 12.6f/100f;
+	
 	private long ingresosReportados;
 	public PredioComercial() {
-		
+		super();
 	}
 	
 	

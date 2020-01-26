@@ -5,7 +5,7 @@ public abstract class Predio {
 	protected String direccion;
 	protected long montoAvaluo;
 	
-	
+	// region Constructors
 	public Predio() {
 		
 	}
@@ -15,6 +15,8 @@ public abstract class Predio {
 		this.direccion = direccion;
 		this.montoAvaluo = montoAvaluo;
 	}
+	
+	// endregion
 	
 	// region Getters and Setters
 
