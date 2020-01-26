@@ -1,10 +1,10 @@
 package com.ejercicio.co;
 
 public class PredioComercial extends Predio {
-	private long ingresosReportados;
 	private static final long LIMITE = 20000000;
-	private static final float PORCENTAJE_VALORIZACION_MENOR = 10.3f;
-	private static final float PORCENTAJE_VALORIZACION_MAYOR = 12.6f;
+	private static final float PORCENTAJE_VALORIZACION_MENOR = 10.3f/100f;
+	private static final float PORCENTAJE_VALORIZACION_MAYOR = 12.6f/100f;
+	private long ingresosReportados;
 	public PredioComercial() {
 		
 	}
@@ -28,9 +28,9 @@ public class PredioComercial extends Predio {
 	public long calcularValorizacion() {
 		long valor = 0;
 		if(this.ingresosReportados < LIMITE) {
-			valor = this.montoAvaluo*(long)PORCENTAJE_VALORIZACION_MENOR;
+			valor = (long) (this.montoAvaluo+this.montoAvaluo*PORCENTAJE_VALORIZACION_MENOR);
 		}else {
-			valor = this.montoAvaluo*(long)PORCENTAJE_VALORIZACION_MAYOR;
+			valor = (long) (this.montoAvaluo+this.montoAvaluo*PORCENTAJE_VALORIZACION_MAYOR);
 		}
 		
 		return valor;
