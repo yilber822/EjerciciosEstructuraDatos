@@ -147,13 +147,13 @@ public class PredioRecidencial extends JPanel implements ActionListener {
     private JTextField DireccionTextField;
     private JTextField MetrajeTextField3;
     private JTextField MontoAvaluoTextField4;
+    // JFormDesigner - End of variables declaration  //GEN-END:variables
 
     @Override
     public void actionPerformed(ActionEvent event) {
-       if(event.getSource() == this.Back){
-           this.AvaluoRecidencial.setVisible(false);
-           MainMenu menu = new MainMenu();
-       }
+        if(event.getSource() == this.Back){
+            this.AvaluoRecidencial.setVisible(false);
+            MainMenu menu = new MainMenu();
+        }
     }
-    // JFormDesigner - End of variables declaration  //GEN-END:variables
 }
