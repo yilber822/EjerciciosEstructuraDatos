@@ -1,4 +1,4 @@
-package com.ejercicio.co;
+package com.ejercicio.co.Entities;
 
 public class PredioResidencial extends Predio{
 	private float dimension; // EN METROS CUADRADOS

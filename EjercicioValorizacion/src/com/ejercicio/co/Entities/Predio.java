@@ -1,4 +1,4 @@
-package com.ejercicio.co;
+package com.ejercicio.co.Entities;
 
 public abstract class Predio {
 	protected String registro;
