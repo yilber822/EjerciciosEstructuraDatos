@@ -4,8 +4,6 @@
 
 package com.ejercicio.co.GUI;
 
-import com.ejercicio.co.Entities.PredioComercial;
-
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

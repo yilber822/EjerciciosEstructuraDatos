@@ -8,10 +8,10 @@ new FormModel {
 			"$columnConstraints": "[fill][fill][fill]"
 			"$rowConstraints": "[][][]"
 		} ) {
-			name: "AvaluoRecidencial"
+			name: "AvaluoComercial"
 			"minimumSize": new java.awt.Dimension( 480, 450 )
 			"name": "Ministerio de Hacienda"
-			"title": "Avaluo Residencial"
+			"title": "Avaluo Comercial"
 			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
 				name: "panel1"
 				"minimumSize": new java.awt.Dimension( 480, 380 )
@@ -53,11 +53,11 @@ new FormModel {
 				} )
 				add( new FormComponent( "javax.swing.JLabel" ) {
 					name: "MetrajeLabel"
-					"text": "Metraje:"
+					"text": "Ingresos Reportados:"
 				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
-					"width": 60
+					"width": 120
 					"height": 21
-					"x": 125
+					"x": 65
 					"y": 175
 				} )
 				add( new FormComponent( "javax.swing.JLabel" ) {
