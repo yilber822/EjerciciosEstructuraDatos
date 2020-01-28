@@ -1,4 +1,4 @@
-package com.ejercicio.co;
+package com.ejercicio.co.Entities;
 
 public class PredioComercial extends Predio {
 	private static final long LIMITE = 20000000;

@@ -1,0 +1,140 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "11.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+			"$layoutConstraints": "hidemode 3"
+			"$columnConstraints": "[fill][fill][fill]"
+			"$rowConstraints": "[][][]"
+		} ) {
+			name: "AvaluoComercial"
+			"minimumSize": new java.awt.Dimension( 480, 450 )
+			"name": "Ministerio de Hacienda"
+			"title": "Avaluo Comercial"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel1"
+				"minimumSize": new java.awt.Dimension( 480, 380 )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "Back"
+					"text": "Atras"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 40
+					"y": 330
+					"width": 155
+					"height": 40
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "Calculate"
+					"text": "Calcular"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 155
+					"height": 40
+					"x": 280
+					"y": 330
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "RegistroLabel"
+					"text": "Registro:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 125
+					"y": 60
+					"width": 60
+					"height": 21
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "DireccionLabel"
+					"text": "Direccion:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 60
+					"height": 21
+					"x": 125
+					"y": 120
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "MetrajeLabel"
+					"text": "Ingresos Reportados:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 120
+					"height": 21
+					"x": 65
+					"y": 175
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "MontoDeLabel"
+					"text": "Monto de"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 70
+					"height": 20
+					"x": 125
+					"y": 215
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "MontoAvaluo"
+					"text": "Avaluo"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 45
+					"height": 20
+					"x": 130
+					"y": 235
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "RegistroTextField"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 190
+					"y": 55
+					"width": 145
+					"height": 35
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "DireccionTextField"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 145
+					"height": 30
+					"x": 190
+					"y": 115
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "MetrajeTextField3"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 145
+					"height": 30
+					"x": 190
+					"y": 170
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "MontoAvaluoTextField4"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 145
+					"height": 30
+					"x": 190
+					"y": 220
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "MetrajeLabel2"
+					"text": "Valorizacion Total:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 110
+					"height": 21
+					"x": 75
+					"y": 280
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "MetrajeTextField4"
+					"editable": false
+					"text": "0"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 145
+					"height": 30
+					"x": 190
+					"y": 275
+				} )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 1 1"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 15, 5 )
+			"size": new java.awt.Dimension( 510, 450 )
+		} )
+	}
+}

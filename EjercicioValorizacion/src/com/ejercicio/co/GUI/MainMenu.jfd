@@ -1,0 +1,40 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "11.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "MainMenu"
+			"title": "Ministerio de Hacienda"
+			"minimumSize": new java.awt.Dimension( 420, 255 )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "PredioRecidencial"
+				"text": "Predio Recidencial"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 145
+				"y": 40
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "PredioComercial"
+				"text": "Predio Comercial"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 131
+				"height": 30
+				"x": 145
+				"y": 95
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Cerrar"
+				"text": "Cerrar"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 131
+				"height": 30
+				"x": 145
+				"y": 155
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 10 )
+			"size": new java.awt.Dimension( 420, 255 )
+		} )
+	}
+}

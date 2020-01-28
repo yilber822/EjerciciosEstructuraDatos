@@ -1,5 +1,10 @@
 package com.ejercicio.co;
 
+import com.ejercicio.co.Entities.Predio;
+import com.ejercicio.co.Entities.PredioComercial;
+import com.ejercicio.co.GUI.MainMenu;
+import com.ejercicio.co.GUI.PredioRecidencial;
+
 import javax.swing.JOptionPane;
 
 public class EjercicioValoracion {
@@ -11,6 +16,9 @@ public class EjercicioValoracion {
 		int opcionEntrada = 0;
 		
 		Predio predio;
+
+		MainMenu menu = new MainMenu();
+		menu.setVisible(true);
 		do {
 			String msg = "Eliga la opción correspondiente al tipo de predio\n"
 						 +"1. Predio residencial.\n"
