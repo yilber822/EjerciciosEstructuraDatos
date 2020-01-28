@@ -10,15 +10,21 @@ import javax.swing.JOptionPane;
 public class EjercicioValoracion {
 
 	public static void main(String[] args) {
+
+
+		MainMenu menu = new MainMenu();
+		menu.setVisible(true);
+		
+		
+		
+		// TOO BASIC
 		String registro = "";
 		String direccion = "";
 		long montoAvaluo = 0L;
 		int opcionEntrada = 0;
-		
 		Predio predio;
 
-		MainMenu menu = new MainMenu();
-		menu.setVisible(true);
+		/*
 		do {
 			String msg = "Eliga la opción correspondiente al tipo de predio\n"
 						 +"1. Predio residencial.\n"
@@ -55,6 +61,8 @@ public class EjercicioValoracion {
 				
 			}
 		}while(opcionEntrada!=0);
+		
+		*/
 	}
 
 }
