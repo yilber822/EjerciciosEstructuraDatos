@@ -212,10 +212,7 @@ public class PredioComercialInt extends JPanel implements ActionListener {
 		
 		this.MetrajeTextField4.setText("$ "+((PredioComercial)predio).calcularValorizacion());
 		
-		JOptionPane.showConfirmDialog(null, ((PredioComercial)predio).toString());
-		
-		
-		
+		JOptionPane.showMessageDialog(null, ((PredioComercial)predio).toString());
 		
 		
     }

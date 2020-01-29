@@ -40,8 +40,9 @@ public class PredioComercial extends Predio {
 
 	@Override
 	public String toString() {
-		return " Para el predio comercial con registro " + registro + "\n Ubicado en la direccion: "
-				+ direccion + "\n con ingresos reportados por: $ " + ingresosReportados +   
+		return "Para el predio comercial con registro " + registro + 
+				"\nUbicado en la direccion: "+ direccion + 
+				"\ncon ingresos reportados por: $ " + ingresosReportados +   
 				"\ny estimando un monto de avaluo correspondiente a: $" + montoAvaluo + 
 				"\nse determina una valorizacion de: $"+ calcularValorizacion();
 	}

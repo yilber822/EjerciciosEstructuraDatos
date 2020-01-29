@@ -1,6 +1,7 @@
 # EjercicioValorizacion
 Ejercicio Valorización de Predios para Ministerio de Hacienda
 
+La clase EjercicioValoracion.java tiene el metodo main.
 
 [UML](https://drive.google.com/file/d/1etOfMi0b8h7QnmMUHkbRnCHMuCzrwKEq/view?usp=sharing)
 

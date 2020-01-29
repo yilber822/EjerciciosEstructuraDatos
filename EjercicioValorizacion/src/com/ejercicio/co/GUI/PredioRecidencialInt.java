@@ -203,6 +203,6 @@ public class PredioRecidencialInt extends JPanel implements ActionListener {
 		
 		this.MetrajeTextField4.setText("$ "+((PredioResidencial)predio).calcularValorizacion());
 		
-		JOptionPane.showConfirmDialog(null, ((PredioResidencial)predio).toString());
+		JOptionPane.showMessageDialog(null, ((PredioResidencial)predio).toString());
     }
 }

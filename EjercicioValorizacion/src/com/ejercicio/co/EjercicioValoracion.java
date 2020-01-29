@@ -18,6 +18,7 @@ public class EjercicioValoracion {
 		
 		
 		// TOO BASIC
+		/*
 		String registro = "";
 		String direccion = "";
 		long montoAvaluo = 0L;
@@ -26,7 +27,7 @@ public class EjercicioValoracion {
 		
 		
 
-		/*
+		
 		do {
 			String msg = "Eliga la opción correspondiente al tipo de predio\n"
 						 +"1. Predio residencial.\n"
