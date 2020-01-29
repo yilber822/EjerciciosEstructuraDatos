@@ -3,7 +3,7 @@ package com.ejercicio.co;
 import com.ejercicio.co.Entities.Predio;
 import com.ejercicio.co.Entities.PredioComercial;
 import com.ejercicio.co.GUI.MainMenu;
-import com.ejercicio.co.GUI.PredioRecidencial;
+import com.ejercicio.co.GUI.PredioRecidencialInt;
 
 import javax.swing.JOptionPane;
 
@@ -23,6 +23,8 @@ public class EjercicioValoracion {
 		long montoAvaluo = 0L;
 		int opcionEntrada = 0;
 		Predio predio;
+		
+		
 
 		/*
 		do {

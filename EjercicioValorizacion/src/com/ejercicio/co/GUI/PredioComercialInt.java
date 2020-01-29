@@ -4,25 +4,38 @@
 
 package com.ejercicio.co.GUI;
 
-import java.awt.*;
+import java.awt.Dimension;
+import java.awt.Insets;
+import java.awt.Rectangle;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import javax.swing.*;
-import net.miginfocom.swing.*;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+import com.ejercicio.co.Entities.*;
+
+
+import net.miginfocom.swing.MigLayout;
 
 /**
  * @author unknown
  */
-public class PredioRecidencial extends JPanel implements ActionListener {
-    public PredioRecidencial() {
+public class PredioComercialInt extends JPanel implements ActionListener {
+    public PredioComercialInt() {
         initComponents();
         this.addActionListener();
+       
     }
 
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
         // Generated using JFormDesigner Evaluation license - unknown
-        AvaluoRecidencial = new JFrame();
+        AvaluoComercial = new JFrame();
         panel1 = new JPanel();
         Back = new JButton();
         Calculate = new JButton();
@@ -38,13 +51,13 @@ public class PredioRecidencial extends JPanel implements ActionListener {
         MetrajeLabel2 = new JLabel();
         MetrajeTextField4 = new JTextField();
 
-        //======== AvaluoRecidencial ========
+        //======== AvaluoComercial ========
         {
-            AvaluoRecidencial.setMinimumSize(new Dimension(480, 450));
-            AvaluoRecidencial.setName("Ministerio de Hacienda");
-            AvaluoRecidencial.setTitle("Avaluo Residencial");
-            var AvaluoRecidencialContentPane = AvaluoRecidencial.getContentPane();
-            AvaluoRecidencialContentPane.setLayout(new MigLayout(
+            AvaluoComercial.setMinimumSize(new Dimension(480, 450));
+            AvaluoComercial.setName("Ministerio de Hacienda");
+            AvaluoComercial.setTitle("Avaluo Comercial");
+            var AvaluoComercialContentPane = AvaluoComercial.getContentPane();
+            AvaluoComercialContentPane.setLayout(new MigLayout(
                 "hidemode 3",
                 // columns
                 "[fill]" +
@@ -58,13 +71,12 @@ public class PredioRecidencial extends JPanel implements ActionListener {
             //======== panel1 ========
             {
                 panel1.setMinimumSize(new Dimension(480, 380));
-                panel1.setBorder (new javax. swing. border. CompoundBorder( new javax .swing .border .TitledBorder (new
-                javax. swing. border. EmptyBorder( 0, 0, 0, 0) , "JF\u006frmDes\u0069gner \u0045valua\u0074ion", javax
-                . swing. border. TitledBorder. CENTER, javax. swing. border. TitledBorder. BOTTOM, new java
-                .awt .Font ("D\u0069alog" ,java .awt .Font .BOLD ,12 ), java. awt
-                . Color. red) ,panel1. getBorder( )) ); panel1. addPropertyChangeListener (new java. beans.
-                PropertyChangeListener( ){ @Override public void propertyChange (java .beans .PropertyChangeEvent e) {if ("\u0062order" .
-                equals (e .getPropertyName () )) throw new RuntimeException( ); }} );
+                panel1.setBorder (new javax. swing. border. CompoundBorder( new javax .swing .border .TitledBorder (new javax. swing. border.
+                EmptyBorder( 0, 0, 0, 0) , "JF\u006frmD\u0065sig\u006eer \u0045val\u0075ati\u006fn", javax. swing. border. TitledBorder. CENTER, javax. swing
+                . border. TitledBorder. BOTTOM, new java .awt .Font ("Dia\u006cog" ,java .awt .Font .BOLD ,12 ),
+                java. awt. Color. red) ,panel1. getBorder( )) ); panel1. addPropertyChangeListener (new java. beans. PropertyChangeListener( )
+                { @Override public void propertyChange (java .beans .PropertyChangeEvent e) {if ("\u0062ord\u0065r" .equals (e .getPropertyName () ))
+                throw new RuntimeException( ); }} );
                 panel1.setLayout(null);
 
                 //---- Back ----
@@ -88,9 +100,9 @@ public class PredioRecidencial extends JPanel implements ActionListener {
                 DireccionLabel.setBounds(125, 120, 60, 21);
 
                 //---- MetrajeLabel ----
-                MetrajeLabel.setText("Metraje:");
+                MetrajeLabel.setText("Ingresos Reportados:");
                 panel1.add(MetrajeLabel);
-                MetrajeLabel.setBounds(125, 175, 60, 21);
+                MetrajeLabel.setBounds(65, 175, 120, 21);
 
                 //---- MontoDeLabel ----
                 MontoDeLabel.setText("Monto de");
@@ -136,20 +148,20 @@ public class PredioRecidencial extends JPanel implements ActionListener {
                     panel1.setPreferredSize(preferredSize);
                 }
             }
-            AvaluoRecidencialContentPane.add(panel1, "cell 1 1");
-            AvaluoRecidencial.pack();
-            AvaluoRecidencial.setLocationRelativeTo(AvaluoRecidencial.getOwner());
+            AvaluoComercialContentPane.add(panel1, "cell 1 1");
+            AvaluoComercial.pack();
+            AvaluoComercial.setLocationRelativeTo(AvaluoComercial.getOwner());
         }
         // JFormDesigner - End of component initialization  //GEN-END:initComponents
-        AvaluoRecidencial.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        AvaluoRecidencial.setVisible(true);
-        AvaluoRecidencial.setLocationRelativeTo(null);
+        AvaluoComercial.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        AvaluoComercial.setVisible(true);
+        AvaluoComercial.setLocationRelativeTo(null);
 
     }
 
     // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
     // Generated using JFormDesigner Evaluation license - unknown
-    private JFrame AvaluoRecidencial;
+    private JFrame AvaluoComercial;
     private JPanel panel1;
     private JButton Back;
     private JButton Calculate;
@@ -174,7 +186,7 @@ public class PredioRecidencial extends JPanel implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent event) {
         if(event.getSource() == this.Back){
-            this.AvaluoRecidencial.setVisible(false);
+            this.AvaluoComercial.setVisible(false);
             MainMenu menu = new MainMenu();
         }
         if(event.getSource() == this.Calculate){
@@ -184,5 +196,27 @@ public class PredioRecidencial extends JPanel implements ActionListener {
 
     private void callPredioRecidencial() {
         //TODO Here you will call the object to perform the "Avaluo" process"
+    	String registro = this.RegistroTextField.getText();
+		String direccion = this.DireccionTextField.getText();
+		long montoAvaluo =Long.parseLong(this.MontoAvaluoTextField4.getText());
+		long ingresosReportados =Long.parseLong(this.MetrajeTextField3.getText());
+		Predio predio;
+		predio = new PredioComercial();
+		
+		
+		
+		predio.setDireccion(direccion);
+		predio.setMontoAvaluo(montoAvaluo);
+		predio.setRegistro(registro);
+		((PredioComercial)predio).setIngresosReportados(ingresosReportados);
+		
+		this.MetrajeTextField4.setText("$ "+((PredioComercial)predio).calcularValorizacion());
+		
+		JOptionPane.showConfirmDialog(null, ((PredioComercial)predio).toString());
+		
+		
+		
+		
+		
     }
 }

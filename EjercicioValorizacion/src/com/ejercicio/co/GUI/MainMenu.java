@@ -33,7 +33,7 @@ public class MainMenu extends JPanel implements ActionListener {
             MainMenuContentPane.setLayout(null);
 
             //---- PredioRecidencial ----
-            PredioRecidencial.setText("Predio Recidencial");
+            PredioRecidencial.setText("Predio Residencial");
             MainMenuContentPane.add(PredioRecidencial);
             PredioRecidencial.setBounds(new Rectangle(new Point(145, 40), PredioRecidencial.getPreferredSize()));
 
@@ -99,12 +99,12 @@ public class MainMenu extends JPanel implements ActionListener {
         }
         if(event.getSource() == this.PredioRecidencial){
             this.MainMenu.setVisible(false);
-            PredioRecidencial guiPredioRecidencial = new PredioRecidencial();
+            PredioRecidencialInt guiPredioRecidencial = new PredioRecidencialInt();
         }
 
         if(event.getSource() == this.PredioComercial){
             this.MainMenu.setVisible(false);
-            PredioComercial guiPredioComercial = new PredioComercial();
+            PredioComercialInt guiPredioComercial = new PredioComercialInt();
         }
 
     }
