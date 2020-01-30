@@ -6,25 +6,44 @@ public class PredioComercial extends Predio {
 	private static final float PORCENTAJE_VALORIZACION_MAYOR = 12.6f/100f;
 	
 	private long ingresosReportados;
+	
+	/** Constructor vacio
+	 * 
+	 */
 	public PredioComercial() {
 		super();
 	}
 	
 	
+	/**Constructor con parametros
+	 * @param registro
+	 * @param direccion
+	 * @param montoAvaluo
+	 * @param ingresosReportados
+	 */
 	public PredioComercial(String registro, String direccion, long montoAvaluo, long ingresosReportados) {
 		super(registro, direccion, montoAvaluo);
 		this.ingresosReportados = ingresosReportados;
 	}
 
 
+	/**Retorna valores de ingresos reportados
+	 * @return el valor de los ingresos reportadoss
+	 */
 	public long getIngresosReportados() {
 		return ingresosReportados;
 	}
 
+	/**Setea valores de ingresos reportados
+	 * @param ingresosReportados
+	 */
 	public void setIngresosReportados(long ingresosReportados) {
 		this.ingresosReportados = ingresosReportados;
 	}
 
+	/**Calcula la valorizacion del predio comercial
+	 * @return el valor de la valorizacion para el predio
+	 */
 	@Override
 	public long calcularValorizacion() {
 		long valor = 0;

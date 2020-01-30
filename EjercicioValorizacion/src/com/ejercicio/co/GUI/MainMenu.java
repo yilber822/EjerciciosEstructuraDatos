@@ -99,7 +99,7 @@ public class MainMenu extends JPanel implements ActionListener {
         }
         if(event.getSource() == this.PredioRecidencial){
             this.MainMenu.setVisible(false);
-            PredioRecidencialInt guiPredioRecidencial = new PredioRecidencialInt();
+            PredioComercialInt guiPredioRecidencial = new PredioComercialInt();
         }
 
         if(event.getSource() == this.PredioComercial){

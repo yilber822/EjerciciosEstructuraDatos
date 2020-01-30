@@ -16,8 +16,8 @@ import net.miginfocom.swing.*;
 /**
  * @author unknown
  */
-public class PredioRecidencialInt extends JPanel implements ActionListener {
-    public PredioRecidencialInt() {
+public class PredioResidencialInt extends JPanel implements ActionListener {
+    public PredioResidencialInt() {
         initComponents();
         this.addActionListener();
     }

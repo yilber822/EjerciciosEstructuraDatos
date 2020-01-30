@@ -3,7 +3,7 @@ package com.ejercicio.co;
 import com.ejercicio.co.Entities.Predio;
 import com.ejercicio.co.Entities.PredioComercial;
 import com.ejercicio.co.GUI.MainMenu;
-import com.ejercicio.co.GUI.PredioRecidencialInt;
+import com.ejercicio.co.GUI.PredioResidencialInt;
 
 import javax.swing.JOptionPane;
 
