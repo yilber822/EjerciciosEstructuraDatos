@@ -73,6 +73,9 @@ public abstract class Predio {
 	// endregion
 	
 	// region Methods
+	/**Calcula la valorizacion para el predio
+	 * @return el valor de la valorizacion como long
+	 */
 	public abstract long calcularValorizacion();
 	// endregion
 

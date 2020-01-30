@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.ejercicio.co"},{"l":"com.ejercicio.co.Entities"},{"l":"com.ejercicio.co.GUI"}]
