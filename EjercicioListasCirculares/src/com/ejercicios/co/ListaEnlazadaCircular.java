@@ -1,9 +1,9 @@
 package com.ejercicios.co;
 
 /**
- * Clase implementación de lista enlazada circular simple
- * La cabeza representa el ultimo nodo añadido o más reciente
- * La cola representa el primer nodo añadido o más viejo
+ * Clase implementaciÃ³n de lista enlazada circular simple
+ * La cabeza representa el ultimo nodo aÃ±adido o mÃ¡s reciente
+ * La cola representa el primer nodo aÃ±adido o mÃ¡s viejo
  * De esta forma, la cabeza siempre tendra su puntero siguiente igual a la cola
  * para formar el ciculo
  */
@@ -26,11 +26,11 @@ public class ListaEnlazadaCircular {
 		// TODO: Insertar en cabeza
 	}
 	
-	public <E> void eliminarCabeza() {
+	public void eliminarCabeza() {
 		// TODO: Eliminar Cabeza
 	}
 	
-	public <E> void eliminarCola() {
+	public void eliminarCola() {
 		// TODO: Elimar cola
 	}
 	
