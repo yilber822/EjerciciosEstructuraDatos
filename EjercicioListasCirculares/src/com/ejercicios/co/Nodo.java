@@ -26,10 +26,11 @@ public class Nodo<E> {
 	public void setSiguiente(Nodo siguiente) {
 		this.siguiente = siguiente;
 	}
-	
+
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
-		return "Nodo con dato "+this.dato.toString();
+		return "Nodo [dato=" + dato.toString()+"]";
 	}
+	
+	
 }
