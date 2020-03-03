@@ -18,12 +18,25 @@ public class ListaEnlazadaCircular {
 		cantidad = 0;
 	}
 	
+	public boolean checkEmpty() {
+		return cabeza == null;
+	}
 	public <E> void insertarEnCola(E dato) {
 		// TODO: Insertar en cola
 	}
 	
 	public <E> void insertarEnCabeza(E dato) {
-		// TODO: Insertar en cabeza
+		Nodo nodo = new Nodo(dato);
+		if(checkEmpty()) {
+			cabeza = nodo;
+			cola = nodo;
+			nodo.setSiguiente(cabeza);
+		}else {
+			nodo.setSiguiente(cabeza);
+			cabeza = nodo;
+			cola.setSiguiente(cabeza);
+		}
+		
 	}
 	
 	public void eliminarCabeza() {
