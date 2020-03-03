@@ -27,6 +27,8 @@ public class ListaEnlazadaCircular {
 	/**
 	 * @param <E>
 	 * @param dato is the value that will be the new head of the list
+	 * The method inserts the value given to the head of the list, moving the current head to the next position 
+	 * and then modifying the tail next reference to the new head of the list
 	 */
 	public <E> void insertarEnCabeza(E dato) {
 		Nodo nodo = new Nodo(dato);
@@ -45,7 +47,6 @@ public class ListaEnlazadaCircular {
 			//sets the next value of the tail as the new head
 			cola.setSiguiente(cabeza);
 		}
-		
 	}
 	
 	public void eliminarCabeza() {
