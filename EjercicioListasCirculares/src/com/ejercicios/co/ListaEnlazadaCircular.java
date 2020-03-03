@@ -31,16 +31,16 @@ public class ListaEnlazadaCircular {
 		Nodo nodo = new Nodo(dato);
 		if(!checkEmpty()) {
 			// If the list is not empty, the head is updated to point to the new node
-			this.cabeza.setSiguiente(nodo);
+			this.cola.setSiguiente(nodo);
 			// The new node is linked to the tail to keep it circular
-			nodo.setSiguiente(this.cola);
+			nodo.setSiguiente(this.cabeza);
 			// The tails is updated
 			this.cola = nodo;
 		}else {
 			// If the list is empty, Just set the tail and head and make it circular
 			this.cabeza = nodo;
 			this.cola = nodo;
-			this.cabeza.setSiguiente(cola);
+			this.cola.setSiguiente(this.cabeza);
 		}
 		this.cantidad++;
 	}
@@ -93,6 +93,20 @@ public class ListaEnlazadaCircular {
 	@Override
 	public String toString() {
 		return "ListaEnlazadaCircular [cabeza=" + cabeza + ", cola=" + cola + ", cantidad=" + cantidad + "]";
+	}
+	
+	public String iterarLista() {
+		String msg = this.toString()+"\n";
+		Nodo firstNode = this.cabeza;
+		Nodo current = this.cabeza;
+		int counter = 1;
+		while(current != null) {
+			msg += String.format("%d Actual %s:Siguiente:%s\n", counter, current.toString(), current.getSiguiente().toString());
+			current = current.getSiguiente();
+			counter++;
+			if(current.equals(firstNode))break;					
+		}
+		return msg;
 	}
 
 	

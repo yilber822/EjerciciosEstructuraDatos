@@ -8,7 +8,7 @@ public class EjercicioListas {
 		circular.insertarEnCola("Hola que hace");
 		circular.insertarEnCola(666);
 		circular.insertarEnCola(5656.6565f);
-		System.out.println(circular);
+		System.out.println(circular.iterarLista());
 	}
 
 }
