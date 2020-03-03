@@ -27,6 +27,7 @@ public class ListaEnlazadaCircular {
 	
 	public <E> void insertarEnCabeza(E dato) {
 		Nodo nodo = new Nodo(dato);
+		//check if the list is currently empty
 		if(checkEmpty()) {
 			cabeza = nodo;
 			cola = nodo;
